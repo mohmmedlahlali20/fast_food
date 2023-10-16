@@ -21,13 +21,14 @@
         <div class="container-fluid">
             <nav class="navbar navbar-expand-lg stroke">
                 <h1>
-                    <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <a class="navbar-brand d-flex align-items-center" href="contact.html">
                         Bistros <i class="fa fa-cutlery ml-2" aria-hidden="true"></i></a>
                 </h1>
                 <!-- if logo is image enable this   
     <a class="navbar-brand" href="#index.html">
         <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
     </a> -->
+
                 <button class="navbar-toggler  collapsed bg-gradient" type="button" data-toggle="collapse"
                     data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -47,8 +48,7 @@
                             <a class="nav-link" href="menu.html">Menu</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact Us <span
-                                    class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="contact.html">Contact Us <span class="sr-only">(current)</span></a>
                         </li>
                         <!-- search button -->
                         <div class="search-right">
@@ -80,95 +80,85 @@
                 </div>
                 <!-- //toggle switch for light and dark theme -->
             </nav>
+               
         </div>
     </header>
     <!--//header-->
 
-    <!-- banner section -->
-    <section class="w3l-banner">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-6 banner-left d-flex align-items-center pl-lg-5">
-                    <div>
-                        <h3 class="text-white mb-4">Welcome to Bistros <br>
-                            Healthy <span class="type-js"><span class="text-js">Fresh Meals!</span></span></h3>
-                        <p class="banner-text text-white">Open Everyday - <span>7 Am to 10 Pm</span>
-                        </p>
-                        <a class="btn btn-style-white btn-style-border mt-5" href="about.html">Learn More</a>
-                    </div>
-                </div>
-                <div class="col-md-6 banner-right">
-                    <div class="small-images">
-                        <div class="ban-grid position-relative">
-                            <img src="assets/images/ban4.jpg" class="img-responsive" alt="" />
-                            <div class="img-ban-sec">
-                                <h5>Fast Foods</h5>
-                                <a href="menu.html" class="btn p-0">More <i class="fa fa-angle-right ml-1"
-                                        aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                        <div class="ban-grid position-relative mt-4">
-                            <img src="assets/images/ban2.jpg" class="img-responsive" alt="" />
-                            <div class="img-ban-sec">
-                                <h5>Breakfasts</h5>
-                                <a href="menu.html" class="btn p-0">More <i class="fa fa-angle-right ml-1"
-                                        aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+  
+
     </section>
     <!-- //banner section -->
 
-    <div style="background-color:#fd8803f6;">
-
-        <h2 style="text-align: center;"> Ajouter Votre Commend </h2>
+    <div style="background-color:#000000f6;">
 
         <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="contact-form">
-                        <h4 class="contact-title">Get In Touch</h4>
-                        <form action="#" method="post">
-                            <div class="form-group">
-                                <label>Your Name</label>
-                                <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
-                                <div class="help-block with-errors"></div>
-                                <label>Your Address</label>
-                                <input type="adresse" name="adresse" class="form-control" placeholder="Your adresse"
-                                    required="">
-                                <div class="help-block with-errors"></div>
-                                <label>Your Phone</label>
-                                <input type="text" name="phone" class="form-control" placeholder="Your Phone"
-                                    required="">
-                                <div class="help-block with-errors"></div>
-                                <label>Your Commende</label>
-                                <textarea name="message" class="form-control" placeholder="Your Commende" rows="5"
-                                    required=""></textarea>
-                                <div class="help-block with-errors"></div>
-                                <button type="submit" class="btn btn-style btn-primary mt-3">Submit</button>
-                                <div class="clearfix"></div>
-                                <div class="contact-result"></div>
-                                <div class="contact-result"></div>
-                        </form>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3372.7000598514046!2d-9.237661324653846!3d32.29304117386967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdac211719897669%3A0x6f59fa5bb517f58a!2sYouCode%20Safi!5e0!3m2!1sfr!2sma!4v1696523296291!5m2!1sfr!2sma" 
-                        width="600" 
-                        height="450" 
-                        style="border:0;" 
-                        allowfullscreen="" 
-                        loading="lazy" 
-                        referrerpolicy="no-referrer-when-downgrade">
-                        NOTRE LOCALISATION
-                    </iframe>
-                    </div>
+            <form class="row">
+            <div class="g">
+                <div class="col-6 my-2">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Full Name"
+                    id="fullname"
+                    required/>
                 </div>
+                <div class="col-6 my-2">
+                  <input
+                    type="date"
+                    class="form-control"
+                    placeholder="Date"
+                    id="reservationDate"
+                    required/>
+                </div>
+                <div class="col-6 my-2">
+                    <input
+                    type="number"
+                    class="form-control"
+                    placeholder="Number of Adults"
+                    id="numAdults"
+                    required>
+                </div>
+                        <div class="col-6 my-2">
+                        <input
+                            type="number"
+                            class="form-control"
+                            placeholder="Number of Children"
+                            id="numChildren"
+                            required >
+
+                </div>
+                <div class="col-6 my-2">
+                    <input
+                    type="tel"
+                    class="form-control"
+                    placeholder="Telephone Number"
+                    id="telephone"
+                    required >
+                </div>
+                <button
+                  type="submit"
+                  class="fas fa-paper-plane btn btn-style my-4 mx-2 col-12 my-2"
+                  aria-hidden="true"
+                >
+                  Submit Reservation
+                </button>
+              </form>
             </div>
-        </div>
+            </div>
+            <div class="Maps">
+                <div class="gmap_canvas">
+                    <iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=University of Oxford&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                    </iframe>
+                    <a href="https://connectionsgame.org/">Connections NYT</a>
+                </div>
+
+            </div>
     </div>
-    </div>
-    </div>
+    <!-- //contact -->
+
+    
+
     <!-- footer -->
     <footer class="w3l-footer-29-main" id="contact">
         <div class="footer-29-w3l py-5">
@@ -180,7 +170,7 @@
                                 Bistros <i class="fa fa-cutlery ml-2" aria-hidden="true"></i></a>
                             </h2>
                             <div
-                                class="footer-list-cont d-flex align-items-center justify-content-between mt-md-5 mt-4 mb-5">
+                                class="footer-list-cont d-flex align-items-center justify-content-between mt-md-4 mt-4 mb-5">
                                 <h6>Contact Us</h6>
 
                                 <div class="main-social-footer-29" style="margin-top: 10px;">
@@ -199,23 +189,7 @@
                                 <div class="address-grid">
                                     <h5>Address</h5>
 
-                                    <h5>10001 Alleghany st, 5th Avenue, 235 Terry, <br> London.</h5>
-<div class="row">
-    <div class="col-6 contact1">
-        <h5 class="mt-sm-5 mt-4">Sunday: <span> 8 AM - 10 PM</span
-                class="phone-number-text mt-2"></h5>
-        <h5 class="mt-sm-5 mt-4">Saturday: <span> 10 AM - 1 PM</span></ </h5>
-            <h5 class="mt-sm-5 mt-4">Monday: <span> 10 AM - 1 PM</span></ </h5>
-                <h5 class="mt-sm-5 mt-4">Tuesday: <span> 10 AM - 1 PM</span></ </h5>
-    </div>
-    <div class="col-6 contact2>
-            <h5 class=" mt-sm-5 mt-4">Wednesday: <span> 10 AM - 1 PM</span></ </h5>
-        <h5 class="mt-sm-5 mt-4">Thursday: <span> 10 AM - 1 PM</span></ </h5>
-            <h5 class="mt-sm-5 mt-4">Friday: <span> 10 AM - 1 PM</span></ </h5>
-                <h5 class="mt-sm-5 mt-4">Saturday: <span> 10 AM - 1 PM</span></ </h5>
-
-    </div>
-</div>
+ 
 
                                 </div>
                             </div>
@@ -277,6 +251,7 @@
                         </div>
                     </div>
                 </div>
+             
     </footer>
     <!-- //footer -->
 
